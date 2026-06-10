@@ -112,3 +112,61 @@ body {
 .card-purple .testimonial-description {
   color: var(--color-purple-300);
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 144rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+      "daniel daniel daniel daniel jonathan kira"
+      "jeanette patrick patrick patrick patrick kira";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+  }
+
+  #daniel {
+    grid-area: daniel;
+  }
+
+  #jonathan {
+    grid-area: jonathan;
+  }
+
+  #jeanette {
+    grid-area: jeanette;
+  }
+
+  #patrick {
+    grid-area: patrick;
+  }
+
+  #kira {
+    grid-area: kira;
+  }
+}
+
+.attribution {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: var(--color-black);
+  width: 100%;
+}
+
+.attribution a {
+  margin-left: 0.5rem;
+}
